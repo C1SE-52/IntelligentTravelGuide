@@ -14,23 +14,20 @@ import "./Header.scss";
 
 const Header = () => {
   const [isOpenSidebar, setIsopenSidebar] = useState(false);
-  const [sticky, setSticky] = useState(false);
+  const [nav, setNav] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 150);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () =>
-      setSticky(window.scrollY >= 10) &&
-      window.removeEventListener("scroll", handleScroll);
-  });
+  const sticky = () => {
+    const navbar = document.querySelector(".header");
+    const navHeight = navbar.getBoundingClientRect().height;
+    window.scrollY > navHeight ? setNav(true) : setNav(false);
+  };
+  window.addEventListener("scroll", sticky);
 
   const ToggleSidebar = () => {
     isOpenSidebar === true ? setIsopenSidebar(false) : setIsopenSidebar(true);
   };
   return (
-    <header className="header">
+    <header className={!nav ? "header" : "header sticky"}>
       <div className="header__top">
         <Container>
           <div className="header__top-left">
@@ -41,7 +38,7 @@ const Header = () => {
               </li>
               <li>
                 <BiPhoneCall />
-                <span>0867405503</span>
+                <span>012345678</span>
               </li>
               <li>
                 <MdPlace />
@@ -72,7 +69,7 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      <div className={sticky ? "header__bot fixed" : "header__bot"}>
+      <div className="header__bot">
         <Container>
           <div className="header__nav">
             <a href="/" className="header__logo">

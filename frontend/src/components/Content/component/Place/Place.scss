@@ -1,0 +1,85 @@
+@use "../../../../scss/" as *;
+.place {
+  position: relative;
+  overflow: hidden;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      background: -moz-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 57%,
+        rgba(0, 0, 0, 0.67) 99%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      background: -webkit-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 57%,
+        rgba(0, 0, 0, 0.67) 99%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 57%,
+        rgba(0, 0, 0, 0.67) 99%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      z-index: 1;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    position: absolute;
+    padding: 1.5rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  &__name {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $clr-white;
+      text-shadow: 0.5px 0.5px $clr-white;
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      &:hover {
+        color: $clr-primary;
+        text-shadow: 0.5px 0.5px $clr-primary;
+      }
+    }
+  }
+}

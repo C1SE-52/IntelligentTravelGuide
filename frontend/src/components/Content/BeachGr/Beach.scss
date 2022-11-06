@@ -1,0 +1,92 @@
+@use "../../../scss/" as *;
+
+.beach {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0 20rem 0;
+  background: $clr-bg-beach;
+  &__container {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid #cccc;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  &__banner {
+    width: 100%;
+    height: 4rem;
+    background: $clr-banner-beach;
+    color: $clr-white;
+    overflow: hidden;
+    @include flex(row, center, center);
+    gap: 1rem;
+    padding: 0.5rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: transitionAll;
+    &:hover {
+      color: $clr-primary;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__content {
+    padding: 3rem 2.5rem;
+    color: $clr-black;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition: transitionAll;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+  &__desc {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: inherit;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    bottom: -5rem;
+  }
+  .swiper-pagination-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../../../scss/" as *;
+
+.showMoreBtn {
+  display: inline-block;
+  width: 12rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 2rem 0 0 auto;
+  background: $clr-secondary;
+  color: $clr-white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  font-weight: 600;
+  &:hover {
+    color: $clr-secondary;
+    background: $clr-white;
+    border: 1px solid $clr-black;
+  }
+}

@@ -52,6 +52,7 @@
   &__bot {
     background-color: $clr-header-bot;
     color: $clr-white;
+    position: relative;
     &-right {
       @include flex(row, center, space-between);
       gap: 3rem;
@@ -151,13 +152,18 @@
   }
 }
 
-.header__bot.fixed {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.5s;
-  z-index: 10000;
-  animation: sticky 1.5s ease-in-out;
+.header.sticky {
+  .header__top {
+    transition: visibility 1s ease-in-out;
+    visibility: hidden;
+  }
+  .header__bot {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: sticky 1s linear;
+  }
 }

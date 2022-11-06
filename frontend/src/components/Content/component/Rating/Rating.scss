@@ -1,0 +1,13 @@
+@use "../../../../scss/" as *;
+.rating {
+  @include flex(row, center, space-between);
+  color: $clr-white !important;
+  &__numReviews {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+.rating.rating-bl-clr {
+  color: $clr-black !important;
+}
