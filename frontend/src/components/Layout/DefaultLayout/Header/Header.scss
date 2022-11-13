@@ -82,6 +82,16 @@
   &__auth {
     @include flex(row, center, space-between);
     gap: 1rem;
+    &-signin {
+      a {
+        text-decoration: none;
+      }
+    }
+    &-signup {
+      a {
+        text-decoration: none;
+      }
+    }
   }
   &__nav {
     @include flex(row, center, space-between);

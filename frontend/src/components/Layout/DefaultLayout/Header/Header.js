@@ -69,10 +69,14 @@ const Header = () => {
             </ul>
             <div className="header__auth">
               <div className="header__auth-signup">
-                <button className="button button__primary">Đăng kí</button>
+                <Link to="/signup" className="button button__primary">
+                  Đăng kí
+                </Link>
               </div>
               <div className="header__auth-signin">
-                <button className="button button__primary">Đăng nhập</button>
+                <Link to="/signin" className="button button__primary">
+                  Đăng nhập
+                </Link>
               </div>
             </div>
           </div>
