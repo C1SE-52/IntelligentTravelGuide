@@ -2,6 +2,7 @@
 .place {
   position: relative;
   overflow: hidden;
+
   &__img {
     display: block;
     width: 100%;
@@ -81,5 +82,33 @@
         text-shadow: 0.5px 0.5px $clr-primary;
       }
     }
+  }
+  &__cart {
+    svg {
+      top: 50%;
+      left: 1.5rem;
+      position: absolute;
+      color: $clr-white;
+      font-size: 3rem;
+      visibility: hidden;
+      &:hover {
+        color: $clr-black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.place:hover .place__cart svg {
+  visibility: visible;
+  animation: botToTop 0.3s ease-in-out;
+}
+
+@keyframes botToTop {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

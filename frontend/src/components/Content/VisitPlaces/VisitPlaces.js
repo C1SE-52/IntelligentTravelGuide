@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
@@ -8,14 +8,10 @@ import Heading from "../component/Heading/Heading";
 import Place from "../component/Place/Place";
 import { reducer } from "../../../hook/reducer";
 import "./VisitPlaces.scss";
-import ShowMore from "../component/ShowMore/ShowMore";
 
 const VisitPlaces = () => {
-  const [show, setShow] = useState(12);
-  const [{ loading, error, places }, dispatch] = useReducer(logger(reducer), {
+  const [{ places }, dispatch] = useReducer(logger(reducer), {
     places: [],
-    loading: true,
-    error: "",
   });
   useEffect(() => {
     const fetchData = async () => {
@@ -29,33 +25,27 @@ const VisitPlaces = () => {
     };
     fetchData();
   }, []);
+
   return (
     <div>
-      <div className="visitPlaces">
+      <div className="visitPlaces" id="visitPlaces">
         <Container>
-          <Heading
-            head="Choose Your"
-            title="Địa điểm tham quan"
-            desc="Tổng hợp các địa điểm tham quan nổi tiếng tại Đà Nẵng, nơi bạn và mọi người cùng nhau khám phá những điều thú vị"
-          />
-          {setShow && loading ? (
-            <div>Loading...</div>
-          ) : error ? (
-            <div>{error}</div>
-          ) : (
+          <div>
+            <Heading
+              head="Choose Your"
+              title="Địa điểm tham quan"
+              desc="Tổng hợp các địa điểm tham quan nổi tiếng tại Đà Nẵng, nơi bạn và mọi người cùng nhau khám phá những điều thú vị"
+            />
             <Row className="mb-5">
-              {places.slice(0, show).map((place) =>
+              {places.slice(0, 8).map((place) =>
                 place.category === "Địa điểm tham quan" ? (
                   <Col sm={6} md={4} lg={3} className="mb-3" key={place.slug}>
                     <Place place={place} />
                   </Col>
                 ) : null
               )}
-              {places.length <= 0 ? null : (
-                <ShowMore setShow={setShow} places={places} />
-              )}
             </Row>
-          )}
+          </div>
         </Container>
       </div>
     </div>

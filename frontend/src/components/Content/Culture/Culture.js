@@ -16,12 +16,11 @@ import "./Culture.scss";
 
 // import required modules
 import { EffectCube, Autoplay, Pagination } from "swiper";
+import { Link } from "react-router-dom";
 
 const Culture = () => {
-  const [{ loading, error, places }, dispatch] = useReducer(logger(reducer), {
+  const [{ places }, dispatch] = useReducer(logger(reducer), {
     places: [],
-    loading: true,
-    error: "",
   });
   useEffect(() => {
     const fetchData = async () => {
@@ -38,66 +37,62 @@ const Culture = () => {
   return (
     <div className="culture">
       <Container>
-        {loading ? (
-          <div>Loading...</div>
-        ) : error ? (
-          <div>{error}</div>
-        ) : (
-          <div>
-            {" "}
-            <Heading
-              head="Plan The"
-              title="Perfect Holiday"
-              desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
-              setColor
-            />
-            <div className="culture__container">
-              <div className="culture__content">
-                <h2 className="culture__title">Văn hoá tín ngưỡng</h2>
-                <p className="culture__desc">
-                  Tín ngưỡng, tôn giáo là những thành tố của văn hóa, nó phản
-                  ánh tâm tư, nguyện vọng, cũng như đóng vai trò vô cùng quan
-                  trọng trong đời sống tinh thần của một bộ phận cư dân. Bên
-                  cạnh đó, tín ngưỡng, tôn giáo còn thể hiện lối ứng xử giữa con
-                  người với thiên nhiên, con người với con người và con người
-                  với xã hội. Và đây là những địa điểm được mọi người săn đón và
-                  chú ý khi đến Đà Nẵng
-                </p>
-              </div>
-              <Swiper
-                effect={"cube"}
-                grabCursor={true}
-                cubeEffect={{
-                  shadow: true,
-                  slideShadows: true,
-                  shadowOffset: 20,
-                  shadowScale: 0.94,
-                }}
-                pagination={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                loop={true}
-                modules={[EffectCube, Autoplay, Pagination]}
-                className="mySwiper"
-              >
-                {places.map((place) =>
-                  place.category === "Văn hoá tín ngưỡng bản địa" ? (
-                    <SwiperSlide key={place.slug}>
+        <div>
+          {" "}
+          <Heading
+            head="Plan The"
+            title="Địa điểm hấp dẫn"
+            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+            setColor
+          />
+          <div className="culture__container">
+            <div className="culture__content">
+              <h2 className="culture__title">Văn hoá tín ngưỡng</h2>
+              <p className="culture__desc">
+                Tín ngưỡng, tôn giáo là những thành tố của văn hóa, nó phản ánh
+                tâm tư, nguyện vọng, cũng như đóng vai trò vô cùng quan trọng
+                trong đời sống tinh thần của một bộ phận cư dân. Bên cạnh đó,
+                tín ngưỡng, tôn giáo còn thể hiện lối ứng xử giữa con người với
+                thiên nhiên, con người với con người và con người với xã hội. Và
+                đây là những địa điểm được mọi người săn đón và chú ý khi đến Đà
+                Nẵng
+              </p>
+            </div>
+            <Swiper
+              effect={"cube"}
+              grabCursor={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              pagination={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[EffectCube, Autoplay, Pagination]}
+              className="mySwiper"
+            >
+              {places.map((place) =>
+                place.category === "Văn hoá tín ngưỡng bản địa" ? (
+                  <SwiperSlide key={place.slug}>
+                    <Link to={`/place/${place.slug}`}>
                       <img
                         src={place.image}
                         alt="Culture"
                         className="culture__img"
                       />
                       <h2 className="culture__name">{place.name}</h2>
-                    </SwiperSlide>
-                  ) : null
-                )}
-              </Swiper>
-            </div>
+                    </Link>
+                  </SwiperSlide>
+                ) : null
+              )}
+            </Swiper>
           </div>
-        )}
+        </div>
       </Container>
     </div>
   );

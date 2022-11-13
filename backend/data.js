@@ -1,9 +1,11 @@
 const data = {
   places: [
     {
+      _id: "1",
       name: "Bãi Bụi",
       slug: "bai-bui",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/baibui.jpg",
       imageCaption:
         "Bãi bụt sơ hữu cảnh đẹp hoang sơ, thu hút nhiều tín đồ xê dịch đến khám phá (Ảnh: Sưu tầm)",
@@ -15,11 +17,12 @@ const data = {
       mapUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.2694398193894!2d108.27984861480827!3d16.103356888859814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217ecad88a6bf%3A0xa8c74d670827b36b!2zSG_DoG5nIFNhLCBUaOG7jSBRdWFuZywgU8ahbiBUcsOgLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665737118584!5m2!1svi!2s",
     },
-
     {
+      _id: "2",
       name: "Ghềnh Bàng",
       slug: "ghenh-bang",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/ghenhbang.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Ghềnh Bàng với những mỏm đá nhiều hình thù độc đáo (Ảnh: Sưu tầm)",
@@ -32,9 +35,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.0940765754194!2d108.30944351480834!3d16.112433588854234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423df2819c425b%3A0xfac92c3b7e0f9926!2zR2jhu4FuaCBCw6BuZw!5e0!3m2!1svi!2s!4v1665726851699!5m2!1svi!2s",
     },
     {
+      _id: "3",
       name: "Cầu Rồng",
       slug: "cau-rong",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/caurong.jpg",
       imageCaption:
         "Cầu Rồng - Biểu tượng du lịch của thành phố Đà Nẵng (Ảnh: IG hahinmakeup86)",
@@ -47,9 +52,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.081082546806!2d108.22603211480771!3d16.061281688885813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219cd0a9906bf%3A0x7e2ae8ecba05aea7!2zQ-G6p3UgUuG7k25nIMSQw6AgTuG6tW5nLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665727100064!5m2!1svi!2s",
     },
     {
+      _id: "4",
       name: "Núi Ngũ Hành Sơn",
       slug: "nui-ngu-hanh-son",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/nuinguhanhson.jpg",
       imageCaption:
         "Ngắm nhìn vẻ đẹp toàn thành phố từ đỉnh núi Ngũ Hành Sơn (Ảnh: Sưu tầm)",
@@ -62,10 +69,12 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.210486240408!2d108.2597816148069!3d16.002554688922057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210c78ccc5f93%3A0x481d7ec1b9029ca7!2zODEgSHV54buBbiBUcsOibiBDw7RuZyBDaMO6YSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665728829236!5m2!1svi!2s",
     },
     {
+      _id: "5",
       name: "Đèo Hải Vân",
       slug: "deo-hai-van",
       category: "Địa điểm tham quan",
       image: "/images/deohaivan.jpg",
+      quantity: 1,
       imageCaption:
         "Đèo Hải Vân - Cung đường đẹp bậc nhất với các tín đồ xê dịch (Ảnh: IG thuyxokum)",
       rating: 4.0,
@@ -78,9 +87,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15327.087106292063!2d108.08135022760274!3d16.180715470992787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314220e3850e33d3%3A0xf06af6bdd5743905!2zxJDDqG8gSOG6o2kgVsOibiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1665728942130!5m2!1svi!2s",
     },
     {
+      _id: "6",
       name: "Suối Mơ",
       slug: "suoi-mo",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/suoimo.jpg",
       imageCaption:
         "Địa điểm du lịch Suối Mơ – địa điểm dã ngoại yêu thích của nhiều du khách (Ảnh: IG nguyenthanh.262)",
@@ -94,8 +105,10 @@ const data = {
     },
 
     {
+      _id: "7",
       name: "Thác Ba Đờ Phọt",
       slug: "thac-ba-do-phot",
+      quantity: 1,
       category: "Địa điểm tham quan",
       image: "/images/thacbadophot.jpg",
       imageCaption: "Thác Ba Đờ Phọt hùng vĩ, tuyệt đẹp (Ảnh: Sưu tầm)",
@@ -109,9 +122,11 @@ const data = {
     },
 
     {
+      _id: "8",
       name: "Làng nghề nước mắm Nam Ô",
       slug: "lang-nghe-nuoc-mam-nam-o",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/langnghenuocmamnamo.jpg",
       imageCaption:
         "Vẻ đẹp yên bình của địa điểm du lịch Đà Nẵng Làng nghề nước mắm Nam Ô (Ảnh: Sưu tầm)",
@@ -124,9 +139,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.508387945366!2d108.12763145806315!3d16.116433047212936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421fe5d9c9ec2d%3A0xdaf04b88490d22d5!2zTsaw4bubYyBt4bqvbSBOYW0gw5QgLSBIxrDGoW5nIEzDoG5nIEPhu5U!5e0!3m2!1svi!2s!4v1665730234712!5m2!1svi!2s",
     },
     {
+      _id: "9",
       name: "Làng cổ Phong Nam",
       slug: "lang-co-phong-nam",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/langcophongnam.jpg",
       imageCaption:
         "Những bức tường rong rêu phủ kín tại làng cổ Phong Nam (Ảnh: Sưu tầm)",
@@ -139,9 +156,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.517571851782!2d108.18884762384035!3d15.986550453531011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421b3a022c381d%3A0xf1091f8a1ae04521!2zTMOgbmcgY-G7lSBQaG9uZyBOYW0!5e0!3m2!1svi!2s!4v1665730386320!5m2!1svi!2s",
     },
     {
+      _id: "10",
       name: "Làng bánh tráng Túy Loan",
       slug: "lang-banh-trang-tuy-loan",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/langbanhtrangtuylan.jpg",
       imageCaption:
         "Nhà thờ tộc lưu giữ nét kiến trúc cổ tại địa điểm du lịch Đà Nẵng Làng bánh tráng Túy Loan (Ảnh: Báo Lao Động)",
@@ -154,9 +173,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61364.877949160764!2d108.06649855820312!3d15.997637299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421c7156cb3745%3A0x381024ae64ced3b5!2zxJDDrG5oIGzDoG5nIFTDunkgTG9hbg!5e0!3m2!1svi!2s!4v1665730571759!5m2!1svi!2s",
     },
     {
+      _id: "11",
       name: "Giếng Trời",
       slug: "gieng-troi",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/giengtroi.jpg",
       imageCaption:
         "Giếng Trời - địa điểm vui chơi hòa cùng thiên nhiên tuyệt đẹp tại Đà Nẵng (Ảnh: Sưu tầm)",
@@ -169,9 +190,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.591634003767!2d107.98643092384573!3d16.034759853405845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141f6831262b307%3A0xa64c6ed6f98b579b!2zR2nhur9uZyBUcuG7nWk!5e0!3m2!1svi!2s!4v1665730713771!5m2!1svi!2s",
     },
     {
+      _id: "12",
       name: "Đỉnh Bàn Cờ ",
       slug: "dinh-ban-co",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/dinhbanco.jpg",
       imageCaption:
         "Đỉnh Bàn Cờ - địa điểm du lịch nổi tiếng tại Đà Nẵng (Ảnh: Sưu tầm)",
@@ -185,9 +208,11 @@ const data = {
     },
 
     {
+      _id: "13",
       name: "Hải đăng Tiên Sa",
       slug: "hai-dang-tien-sa",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/haidangtiensa.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Hải đăng Tiên Sa tạo lạc trên bán đảo Sơn Trà (Ảnh: Sưu tầm)",
@@ -200,9 +225,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.5669489781435!2d108.31987381480872!3d16.139687488837435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31423dd18d128a23%3A0xab60f4ad03227395!2zSOG6o2kgxJHEg25nIFPGoW4gVHLDoA!5e0!3m2!1svi!2s!4v1665730967515!5m2!1svi!2s",
     },
     {
+      _id: "14",
       name: "Hồ Đồng Xanh – Đồng Nghệ",
       slug: "ho-dong-xanh-dong-nghe",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/hodongxanhdongnghe.jpg",
       imageCaption:
         "Hòa mình cùng thiên nhiên xanh mát tại hồ Đồng Xanh - Đồng Nghệ (Ảnh: Sưu tầm)",
@@ -216,9 +243,11 @@ const data = {
     },
 
     {
+      _id: "15",
       name: "Rừng dừa Bảy Mẫu",
       slug: "rung-dua-bay-mau",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/rungduabaymau.jpg",
       imageCaption:
         "Rừng dừa Bảy Mẫu - địa điểm check-in cực hot gần Đà Nẵng (Ảnh: Sưu tầm)",
@@ -232,9 +261,11 @@ const data = {
     },
 
     {
+      _id: "16",
       name: "Thánh địa Mỹ Sơn",
       slug: "thanh-dia-my-son",
       category: "Địa điểm tham quan",
+      quantity: 1,
       image: "/images/thanhdiamyson.jpg",
       imageCaption:
         "Thánh địa Mỹ Sơn - điểm sống ảo cực chất gần Đà Nẵng (Ảnh: IG myng21)",
@@ -247,9 +278,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15358.940873960844!2d108.10501767253845!3d15.765140415702259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314200a30f3839eb%3A0xe7c8b131ea5e90b2!2zVGjDoW5oIMSR4buLYSBN4bu5IFPGoW4sIER1eSBYdXnDqm4sIFF14bqjbmcgTmFtLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1665731457114!5m2!1svi!2s",
     },
     {
+      _id: "17",
       name: "Bãi biển Mỹ Khê ",
       slug: "bai-bien-my-khe",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibienmykhe.jpg",
       imageCaption:
         "Biển Mỹ Khê là một trong những bãi biển đẹp nhất tại Đà Nẵng (Ảnh: IG hanggxuu)",
@@ -262,9 +295,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.136719706929!2d108.24279657434147!3d16.06194205554166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421782f7fa0ee3%3A0xeafb8ba272ee55ac!2zQsOjaSBiaeG7g24gTeG7uSBLaMOq!5e0!3m2!1svi!2s!4v1665731585463!5m2!1svi!2s",
     },
     {
+      _id: "18",
       name: "Bãi biển Xuân Thiều",
       slug: "bai-bien-xuan-thieu",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibienxuanthieu.jpg",
       imageCaption:
         "Bãi biển Xuân Thiều cũng là một trong những địa điểm du lịch biển lý tưởng tại Đà Nẵng (Ảnh: Sưu tầm)",
@@ -277,9 +312,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30666.881425909804!2d108.11973717060779!3d16.098658364929264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218c89fccd181%3A0x3c19d491d8564798!2zQsOjaSB04bqvbSBMacOqbiBDaGnhu4N1!5e0!3m2!1svi!2s!4v1665731711443!5m2!1svi!2s",
     },
     {
+      _id: "19",
       name: "Bãi biển Non Nước",
       slug: "bai-bien-non-nuoc",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibiennonnuoc.jpg",
       imageCaption:
         "Bãi biển Non Nước có cảnh sắc hoang sơ thu hút khách du lịch (Ảnh: Sưu tầm)",
@@ -293,9 +330,11 @@ const data = {
     },
 
     {
+      _id: "20",
       name: "Bãi biển Nam Ô",
       slug: "bai-bien-nam-o",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibiennamo.jpg",
       imageCaption:
         "Du khách chụp hình tại địa điểm du lịch Đà Nẵng Bãi rạn Nam Ô (Ảnh: Sưu tầm)",
@@ -308,9 +347,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.966986480837!2d108.12820721480853!3d16.119008588850193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314221e2e052169f%3A0x32cce407b36782e0!2zQsOjaSB04bqvbSBOYW0gw5Q!5e0!3m2!1svi!2s!4v1665731952367!5m2!1svi!2s",
     },
     {
+      _id: "21",
       name: "Bãi biển Tiên Sa",
       slug: "bai-bien-tien-sa",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibientiensa.jpg",
       imageCaption:
         "Biển Tiên Sa Đà Nẵng là một vùng biển yên bình, tuyệt đẹp (Ảnh: Sưu tầm)",
@@ -323,9 +364,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.4318819024047!2d108.21794216759625!3d16.124346888293438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314222bb891f6be3%3A0xca95728275706863!2zQsOjaSBiaeG7g24gVGnDqm4gU2E!5e0!3m2!1svi!2s!4v1665732106150!5m2!1svi!2s",
     },
     {
+      _id: "22",
       name: "Bãi biển An Bàng",
       slug: "bai-bien-an-bang",
       category: "Bãi biển đẹp",
+      quantity: 1,
       image: "/images/baibienanbang.jpg",
       imageCaption:
         "Bãi biễn An Bàng mộc mạc, hoang sơ, du khách thỏa sức trải nghiệm du lịch biển (Ảnh: Sưu tầm)",
@@ -339,9 +382,11 @@ const data = {
     },
 
     {
+      _id: "23",
       name: "Chùa Linh Ứng",
       slug: "chua-linh-ung",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/chualinhung.jpg",
       imageCaption:
         "Du lịch tâm linh ở Đà Nẵng không thể bỏ qua chùa Linh Ứng (Ảnh: Sưu tầm)",
@@ -354,9 +399,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.33059707272!2d108.27326602385331!3d16.100190253236107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217095c3bd6a5%3A0xcb940140517b3e26!2zQ2jDuWEgbGluaCDhu6luZw!5e0!3m2!1svi!2s!4v1665732469102!5m2!1svi!2s",
     },
     {
+      _id: "24",
       name: "Nhà thờ Con Gà",
       slug: "nha-tho-con-ga",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/nhathoconga.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Nhà thờ Con Gà với kiến trúc nổi bật, thu hút (Ảnh: Sưu tầm)",
@@ -370,9 +417,11 @@ const data = {
     },
 
     {
+      _id: "25",
       name: "Chùa Quan Âm",
       slug: "chua-quan-am",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/chuaquanam.jpg",
       imageCaption:
         "Chùa Quan Âm có kiến trúc độc đáo, thu hút đông đảo khách du lịch hằng năm (Ảnh: Sưu tầm)",
@@ -385,9 +434,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122766.15406702441!2d108.22304415504075!3d15.938261546106718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210bc07fdc7f9%3A0xccc3f3297b33d5ba!2zQ2jDuWEgUXXDoW4gVGjhur8gw4Jt!5e0!3m2!1svi!2s!4v1665732814508!5m2!1svi!2s",
     },
     {
+      _id: "26",
       name: "Đền Lĩnh Chúa Linh Từ",
       slug: "den-linh-chua-linh-tu",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/denlinhchualinhtu.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng đền Lĩnh Chúa Linh Từ nằm giữa thiên nhiên nên thơ hùng vĩ (Ảnh: Sưu tầm)",
@@ -401,9 +452,11 @@ const data = {
     },
 
     {
+      _id: "27",
       name: "Nhà Thờ Chính Toà",
       slug: "nha-tho-chinh-toa",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/nhathochinhtoa.jpg",
       imageCaption:
         "Nhà thờ Chính Tòa có màu hồng bắt mắt, trở thành điểm check-in thu hút tại Đà Nẵng (Ảnh: Sưu tầm) ",
@@ -416,9 +469,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9772221122525!2d108.21848592184476!3d16.06667175332295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421832547c341d%3A0xf5a1cee35303f175!2zR2nDoW8geOG7qSBDaMOtbmggdMOyYSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1665733208291!5m2!1svi!2s",
     },
     {
+      _id: "28",
       name: "Bảo tàng Đà Nẵng",
       slug: "bao-tang-da-nang",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/baotangdanang.jpg",
       imageCaption:
         "Thỏa sức check-in với nhiều bức tranh 3D độc đáo tại bảo tàng Đà Nẵng (Ảnh: Sưu tầm)",
@@ -431,9 +486,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7732832189276!2d108.22048451457493!3d16.07725048887602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183691882913%3A0xc9180a3982a9ef58!2zQuG6o28gdMOgbmcgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1665733369926!5m2!1svi!2s",
     },
     {
+      _id: "29",
       name: "Bảo tàng Đồng Đình",
       slug: "bao-tang-dong-dinh",
       category: "Văn hoá tín ngưỡng bản địa",
+      quantity: 1,
       image: "/images/baotangdongdinh.jpg",
       imageCaption:
         "Bảo tàng Đồng Đình - nơi hòa mình trong những không gian xưa cũ (Ảnh: IG wygo.club)",
@@ -446,9 +503,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.307032041241!2d108.27389871457531!3d16.101410488861063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217d700e5ae69%3A0xe0ee545e81e43d99!2zQuG6o28gdMOgbmcgxJDhu5NuZyDEkMOsbmg!5e0!3m2!1svi!2s!4v1665733521366!5m2!1svi!2s",
     },
     {
+      _id: "30",
       name: "Chợ đêm Sơn Trà",
       slug: "cho-dem-son-tra",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/chodemsontra.jpg",
       imageCaption:
         "Chợ đêm Sơn Trà là trung tâm mua sắm sầm uất bậc nhất tại Đà Nẵng (Ảnh: Sưu tầm)",
@@ -462,9 +521,11 @@ const data = {
     },
 
     {
+      _id: "31",
       name: "Bảo tàng 3D Trick Eye",
       slug: "bao-tang-3d-trick-eye",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/baotang3d.jpg",
       imageCaption:
         "Nhiều góc chụp cực hot tại bảo tàng 3D Trick Eye (Ảnh: Sưu tầm)",
@@ -478,9 +539,11 @@ const data = {
     },
 
     {
+      _id: "32",
       name: "Ngôi nhà úp ngược (Upside down house)",
       slug: "ngoi-nha-up-nguoc",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/ngoinhaupnguoc.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Ngôi nhà úp ngược là địa điểm check in yêu thích của các bạn trẻ (Ảnh: VnExpress)",
@@ -494,9 +557,11 @@ const data = {
     },
 
     {
+      _id: "33",
       name: "Công viên biển Đông",
       slug: "cong-vien-bien-dong",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/congvienbiendong.jpg",
       imageCaption:
         "Công viên Biển Đông - địa điểm vui chơi, check-in tại Đà Nẵng (Ảnh: IG haphuoong)",
@@ -510,9 +575,11 @@ const data = {
     },
 
     {
+      _id: "34",
       name: "Cung văn hóa thiếu nhi Đà Nẵng",
       slug: "cung-van-hoa-thieu-nhi-da-nang",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/cungvanhoathieunhi.jpg",
       imageCaption:
         "Nhiều góc chụp nghệ thuật tại cung thiếu nhi Đà Nẵng (Ảnh: Sưu Tầm)",
@@ -526,9 +593,11 @@ const data = {
     },
 
     {
+      _id: "35",
       name: "Sky bar 36",
       slug: "sky-bar-36",
       category: "Địa điểm vui chơi hấp dẫn",
+      quantity: 1,
       image: "/images/skybar36.jpg",
       imageCaption:
         "Sky bar 36 là điểm vui chơi quen thuộc với nhiều giới trẻ, khách du lịch khi đến Đà Nẵng (Ảnh: Sưu tầm)",
@@ -542,9 +611,11 @@ const data = {
     },
 
     {
+      _id: "36",
       name: "Làng bích họa Tam Thanh",
       slug: "lang-bich-hoa-tam-thanh",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/langbichhoatamthanh.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Làng Bích Họa Tam Thanh thu hút các bạn trẻ đến check in, chụp hình (Ảnh: Sưu tầm)",
@@ -558,9 +629,11 @@ const data = {
     },
 
     {
+      _id: "37",
       name: "Cầu khóa tình yêu",
       slug: "cau-khoa-tinh-yeu",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/caukhoatinhyeu.jpg",
       imageCaption:
         "Cầu khóa tình yêu - địa điểm du lịch quen thuộc tại Đà Nẵng (Ảnh: Sưu tầm)",
@@ -573,9 +646,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15337.03447975502!2d108.21981312120829!3d16.052063916789233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219619542c5dd%3A0x7d43b6210f4a07fe!2zQ-G6p3UgVMOsbmggWcOqdSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1665735240312!5m2!1svi!2s",
     },
     {
+      _id: "38",
       name: "Phim trường Thuận Phước Field",
       slug: "phim-truong-thuan-phuoc-filed",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/phimtruongthuanphuoc.jpg",
       imageCaption:
         "Không gian rộng lớn tại Phim trường Thuận Phước Field (Ảnh: Sưu tầm)",
@@ -588,9 +663,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30666.482796648346!2d108.19005059111863!3d16.10123870670392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421805882d0b87%3A0xb5aab2cee6f31a56!2zS2h1IMSQaeG7h24g4bqibmggdsOgIETDoyBOZ2_huqFpIMSQw6AgTuG6tW5nLCBOZ3V54buFbiBI4buvdSBBbiwgTuG6oWkgSGnDqm4gxJDDtG5nLCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665735456407!5m2!1svi!2s",
     },
     {
+      _id: "39",
       name: "Bãi Cát Vàng",
       slug: "bai-cat-vang",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/baicatvang.jpg",
       imageCaption:
         "Du lịch Đà Nẵng nên ghé qua bãi Cát Vàng với không gian xanh mát (Ảnh: Sưu tầm)",
@@ -604,8 +681,10 @@ const data = {
     },
 
     {
+      _id: "40",
       name: "Cầu Sông Hàn",
       slug: "cau-song-han",
+      quantity: 1,
       category: "Check-in Đà Nẵng",
       image: "/images/causonghan.jpg",
       imageCaption: "Vẻ đẹp lung linh của Cầu sông Hàn về đêm (Ảnh: Sưu tầm)",
@@ -618,9 +697,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.864782114502!2d108.22748291457485!3d16.072505088878845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142182fb6302a5b%3A0x5f3e0391184d11e8!2zQ-G6p3UgU8O0bmcgSMOgbiwgQW4gSOG6o2kgQuG6r2MsIFPGoW4gVHLDoCwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1665735833291!5m2!1svi!2s",
     },
     {
+      _id: "41",
       name: "Tượng cá chép hóa rồng",
       slug: "tuong-ca-chep-hoa-rong",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/tuongcachephoarong.jpg",
       imageCaption:
         "Check-in tại tượng cá chép hóa rồng - biểu tượng của du lịch Đà Nẵng (Ảnh: Sưu tầm)",
@@ -633,9 +714,11 @@ const data = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0497113126567!2d108.22533032184424!3d16.062909953332753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142198c825000e1%3A0x9b011fe03c346db3!2zVMaw4bujbmcgQ8OhIENow6lwIEjDs2EgUuG7k25n!5e0!3m2!1svi!2s!4v1665736122792!5m2!1svi!2s",
     },
     {
+      _id: "42",
       name: "Cù Lao Chàm",
       slug: "cu-lao-cham",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/culaocham.jpg",
       imageCaption:
         "Khám phá du lịch gần Đà Nẵng ở điểm tham quan Cù Lao Chàm (Ảnh: Sưu tầm)",
@@ -649,9 +732,11 @@ const data = {
     },
 
     {
+      _id: "43",
       name: "Bãi cỏ cháy",
       slug: "bai-co-chay",
       category: "Check-in Đà Nẵng",
+      quantity: 1,
       image: "/images/baicochay.jpg",
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Bãi Cỏ Cháy thu hút nhiều bạn trẻ đến chụp hình (Ảnh: Sưu tầm)",
@@ -665,8 +750,10 @@ const data = {
     },
 
     {
+      _id: "44",
       name: "Rừng thông Bồ Bồ",
       slug: "rung-thong-bo-bo",
+      quantity: 1,
       category: "Check-in Đà Nẵng",
       image: "/images/rungthongbobo.jpg",
       imageCaption: "Rủ rê bạn bè dã ngoại tại rừng thông Bồ Bồ (Ảnh: Sưu tầm)",

@@ -3,6 +3,10 @@
 .destination {
   padding: 10rem 0;
   background-color: $clr-black;
+  a {
+    display: block;
+    text-decoration: none;
+  }
   &__img {
     width: 100%;
     height: 40rem;

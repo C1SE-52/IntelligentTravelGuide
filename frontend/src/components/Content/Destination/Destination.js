@@ -14,12 +14,11 @@ import "./Destination.scss";
 import logger from "use-reducer-logger";
 import axios from "axios";
 import { reducer } from "../../../hook/reducer";
+import { Link } from "react-router-dom";
 
 const Destination = () => {
-  const [{ loading, error, places }, dispatch] = useReducer(logger(reducer), {
+  const [{ places }, dispatch] = useReducer(logger(reducer), {
     places: [],
-    loading: true,
-    error: "",
   });
   useEffect(() => {
     const fetchData = async () => {
@@ -36,44 +35,40 @@ const Destination = () => {
   return (
     <div className="destination">
       <Container>
-        {loading ? (
-          <div>Loading...</div>
-        ) : error ? (
-          <div>{error}</div>
-        ) : (
-          <div>
-            {" "}
-            <Heading
-              head="Choose Your"
-              title="Destination"
-              desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
-              setColor
-            />
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={60}
-              loop={true}
-              autoplay={{
-                delay: 10000,
-              }}
-              navigation={true}
-              modules={[Autoplay, Navigation]}
-            >
-              {places.map((place) =>
-                place.category === "Check-in Đà Nẵng" ? (
-                  <SwiperSlide key={place.slug}>
+        <div>
+          {" "}
+          <Heading
+            head="Choose Your"
+            title="Nơi Check-in Lý Tưởng"
+            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+            setColor
+          />
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={60}
+            loop={true}
+            autoplay={{
+              delay: 10000,
+            }}
+            navigation={true}
+            modules={[Autoplay, Navigation]}
+          >
+            {places.map((place) =>
+              place.category === "Check-in Đà Nẵng" ? (
+                <SwiperSlide key={place.slug}>
+                  <Link to={`/place/${place.slug}`}>
                     <img
                       className="destination__img"
                       src={place.image}
                       alt=""
                     />
                     <h2 className="destination__name">{place.name}</h2>
-                  </SwiperSlide>
-                ) : null
-              )}
-            </Swiper>
-          </div>
-        )}
+                  </Link>
+                </SwiperSlide>
+              ) : null
+            )}
+          </Swiper>
+        </div>
       </Container>
     </div>
   );

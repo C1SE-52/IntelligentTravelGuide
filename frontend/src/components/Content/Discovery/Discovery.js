@@ -17,7 +17,6 @@ const Discovery = () => {
     <div>
       <div className="discovery">
         <Container>
-          3e
           <Heading
             head="Go & Discover"
             title="Breathtaking Cities"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import { FaFacebook, FaInstagram, FaMailBulk, FaYoutube } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
@@ -11,8 +11,11 @@ import Sidebar from "../../../Sidebar/Sidebar";
 
 //
 import "./Header.scss";
+import { Store } from "../../../../hook/Store";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isOpenSidebar, setIsopenSidebar] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -25,6 +28,12 @@ const Header = () => {
 
   const ToggleSidebar = () => {
     isOpenSidebar === true ? setIsopenSidebar(false) : setIsopenSidebar(true);
+  };
+
+  const { state } = useContext(Store);
+  const { cart } = state;
+  const handleAddToCart = () => {
+    navigate("/cart");
   };
   return (
     <header className={!nav ? "header" : "header sticky"}>
@@ -77,34 +86,39 @@ const Header = () => {
             </a>
             <ul className="header__menu">
               <li className="header__menu-item">
-                <a href="# " className="header__menu-link">
-                  Home
-                </a>
+                <Link to="#" className="header__menu-link">
+                  Trang chủ
+                </Link>
               </li>
               <li className="header__menu-item">
-                <a href="# " className="header__menu-link">
-                  Abouts
-                </a>
+                <Link to="# " className="header__menu-link">
+                  Giới thiệu
+                </Link>
               </li>
               <li className="header__menu-item">
-                <a href="# " className="header__menu-link">
+                <Link to="#" className="header__menu-link">
+                  Các địa điểm hấp dẫn
+                </Link>
+              </li>
+              <li className="header__menu-item">
+                <Link to="# " className="header__menu-link">
                   Tours
-                </a>
+                </Link>
               </li>
               <li className="header__menu-item">
-                <a href="# " className="header__menu-link">
-                  Blog
-                </a>
-              </li>
-              <li className="header__menu-item">
-                <a href="# " className="header__menu-link">
-                  Contact
-                </a>
+                <Link to="# " className="header__menu-link">
+                  Liên hệ
+                </Link>
               </li>
             </ul>
             <div className="header__bot-right">
-              <div className="header__cart">
+              <div className="header__cart" onClick={handleAddToCart}>
                 <RiLuggageCartFill />
+                {cart.cartItems.length > 0 ? (
+                  <div className="place__quantity">
+                    {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                  </div>
+                ) : null}
               </div>
               <div className="header__search">
                 <input type="text" />

@@ -1,0 +1,51 @@
+@use "../../scss/" as *;
+
+.cartPlace {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 190px);
+  padding: 6rem 0;
+  background-color: rgba($color: $clr-gray, $alpha: 0.2);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__name {
+    font-size: 3rem;
+    color: $clr-primary;
+    text-decoration: none;
+    font-family: "Fasthand", cursive;
+    max-width: 24rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+  .rating {
+    display: flex;
+    gap: 1rem;
+    color: $clr-primary !important;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 70%;
+    height: 25rem;
+    object-fit: cover;
+    padding: 2rem;
+  }
+  &__icon {
+    svg {
+      font-size: 2rem;
+      color: $clr-primary;
+      &:hover {
+        color: $clr-secondary;
+        cursor: pointer;
+      }
+    }
+  }
+}

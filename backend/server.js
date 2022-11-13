@@ -17,6 +17,15 @@ app.get("/api/places/slug/:slug", (req, res) => {
   res.send(data.places);
 });
 
+app.get("/api/places/:id", (req, res) => {
+  const product = data.places.find((x) => x._id === req.params.id);
+  if (product) {
+    res.send(product);
+  } else {
+    res.status(404).send({ message: "Product Not Found" });
+  }
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`server at http://localhost:${port}`);
