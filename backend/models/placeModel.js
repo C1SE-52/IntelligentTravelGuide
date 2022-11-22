@@ -7,6 +7,7 @@ const placeSchema = new mongoose.Schema(
     category: { type: String, required: true },
     quantity: { type: String, required: true },
     image: { type: String, required: true },
+    imageArr: { type: Array, require: true },
     imageCaption: { type: String, required: true },
     rating: { type: Number, required: true },
     numReviews: { type: Number, required: true },

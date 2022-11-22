@@ -38,7 +38,7 @@ const Sidebar = (props) => {
           />
 
           <div className="sidebar__socials">
-            <h2>Follow me</h2>
+            <h2>Theo dõi chúng tôi</h2>
             <ul>
               <li>
                 <a href="/">

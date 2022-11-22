@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useReducer, useState } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
@@ -13,6 +13,13 @@ import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import MessageBox from "../../components/MessageBox/MessageBox";
 import { getError } from "../../utils/utils";
 import { Store } from "../../hook/Store";
+//
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/scss";
+import "swiper/css/effect-fade";
+// import required modules
+import { Autoplay } from "swiper";
 
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -69,7 +76,7 @@ const PlaceDetail = () => {
     });
     navigate("/cart");
   };
-
+  console.log(place.imageArr);
   return (
     <div className="placeDetail">
       <Container>
@@ -120,6 +127,26 @@ const PlaceDetail = () => {
                 </div>
               </Col>
             </Row>
+            <div className="placeDetail__imageArr">
+              <h2>Các hình ảnh tương tự</h2>
+              <Swiper
+                slidesPerView={4}
+                spaceBetween={10}
+                loop={true}
+                navigation={false}
+                autoplay={{
+                  delay: 10000,
+                }}
+                pagination={false}
+                modules={[Autoplay]}
+              >
+                {place.imageArr.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <img src={item} alt="name" />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
             <Row>
               <Iframe width="100%" height="600px" src={place.mapUrl} />
             </Row>

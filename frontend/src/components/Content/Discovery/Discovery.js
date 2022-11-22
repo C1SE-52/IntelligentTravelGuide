@@ -19,8 +19,8 @@ const Discovery = () => {
         <Container>
           <Heading
             head="Go & Discover"
-            title="Breathtaking Cities"
-            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+            title="Thành phố đáng sống"
+            desc="Được bao bọc bởi dòng sông Hàn thơ mộng,hình ảnh thành phố Đà Nẵng thân thương luôn được khắc hoạ trong tâm trí người dân nơi này"
             setColor
           />
           <div className="discovery__container">

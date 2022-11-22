@@ -23,7 +23,7 @@ const Banner = () => {
         navigation={true}
         effect={"fade"}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Navigation, Autoplay, EffectFade]}
@@ -32,11 +32,11 @@ const Banner = () => {
           <div className="banner__container">
             <img alt="" src={caurong} className="banner__img" />
             <div className="banner__content">
-              <h4>Come with us</h4>
-              <h2>Relax and Enjoy</h2>
+              <h4>Đến với chúng tôi</h4>
+              <h2>Thư giãn và trải nghiệm</h2>
               <p>
-                Da Nang is known as the most livable city in Vietnam. Come and
-                experience the best tourist destinations for you
+                Đà Nẵng được mệnh danh là thành phố đáng sống nhất Việt Nam. Hãy
+                đến và khám phá những địa điểm du lịch tốt nhất dành cho bạn
               </p>
             </div>
           </div>
@@ -45,11 +45,11 @@ const Banner = () => {
           <div className="banner__container">
             <img alt="" src={bantayphat} className="banner__img" />
             <div className="banner__content">
-              <h4>Come with us</h4>
-              <h2>Relax and Enjoy</h2>
+              <h4>Đến với chúng tôi</h4>
+              <h2>Thư giãn và trải nghiệm</h2>
               <p>
-                Da Nang is known as the most livable city in Vietnam. Come and
-                experience the best tourist destinations for you
+                Đà Nẵng được mệnh danh là thành phố đáng sống nhất Việt Nam. Hãy
+                đến và khám phá những địa điểm du lịch tốt nhất dành cho bạn
               </p>
             </div>
           </div>
@@ -58,11 +58,11 @@ const Banner = () => {
           <div className="banner__container">
             <img alt="" src={chualinhung} className="banner__img" />
             <div className="banner__content">
-              <h4>Come with us</h4>
-              <h2>Relax and Enjoy</h2>
+              <h4>Đến với chúng tôi</h4>
+              <h2>Thư giãn và trải nghiệm</h2>
               <p>
-                Da Nang is known as the most livable city in Vietnam. Come and
-                experience the best tourist destinations for you
+                Đà Nẵng được mệnh danh là thành phố đáng sống nhất Việt Nam. Hãy
+                đến và khám phá những địa điểm du lịch tốt nhất dành cho bạn
               </p>
             </div>
           </div>

@@ -40,7 +40,8 @@ const Destination = () => {
           <Heading
             head="Choose Your"
             title="Nơi Check-in Lý Tưởng"
-            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+            desc="Đà Nẵng – Thiên đường check in của các bạn với vô
+            số góc sống ảo đẹp mê ly.Đà Nẵng với góc nhìn bao quát mang đến sự thanh tĩnh và yên bình"
             setColor
           />
           <Swiper

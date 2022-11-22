@@ -194,3 +194,13 @@
     animation: sticky 1s linear;
   }
 }
+
+.userInfo {
+  font-size: 1.6rem;
+  color: $clr-white;
+  text-transform: capitalize;
+}
+.userInfo div a {
+  font-size: 1.5rem;
+  color: black;
+}

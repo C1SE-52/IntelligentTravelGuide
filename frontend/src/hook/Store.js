@@ -9,12 +9,6 @@ const initialState = {
     : null,
 
   cart: {
-    shippingAddress: localStorage.getItem("shippingAddress")
-      ? JSON.parse(localStorage.getItem("shippingAddress"))
-      : { location: {} },
-    paymentMethod: localStorage.getItem("paymentMethod")
-      ? localStorage.getItem("paymentMethod")
-      : "",
     cartItems: localStorage.getItem("cartItems")
       ? JSON.parse(localStorage.getItem("cartItems"))
       : [],

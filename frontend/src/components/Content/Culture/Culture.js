@@ -40,9 +40,9 @@ const Culture = () => {
         <div>
           {" "}
           <Heading
-            head="Plan The"
+            head="Chooses Your"
             title="Địa điểm hấp dẫn"
-            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+            desc="Tổng hợp những địa điểm hấp dẫn dành cho những bạn thích những nơi liêng thiêng, thanh tịnh"
             setColor
           />
           <div className="culture__container">

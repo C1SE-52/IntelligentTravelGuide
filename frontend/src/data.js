@@ -5,6 +5,12 @@ const data = {
       slug: "bai-bui",
       category: "Địa điểm tham quan",
       image: "/images/baibui.jpg",
+      imageArr: [
+        "/images/baibut/1.jpg",
+        "/images/baibut/2.jpg",
+        "/images/baibut/3.jpg",
+        "/images/baibut/4.jpg",
+      ],
       imageCaption:
         "Bãi bụt sơ hữu cảnh đẹp hoang sơ, thu hút nhiều tín đồ xê dịch đến khám phá (Ảnh: Sưu tầm)",
       rating: 4.5,
@@ -21,6 +27,12 @@ const data = {
       slug: "ghenh-bang",
       category: "Địa điểm tham quan",
       image: "/images/ghenhbang.jpg",
+      imageArr: [
+        "/images/ghenhbang/1.jpg",
+        "/images/ghenhbang/2.jpg",
+        "/images/ghenhbang/3.jpg",
+        "/images/ghenhbang/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Ghềnh Bàng với những mỏm đá nhiều hình thù độc đáo (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -36,6 +48,12 @@ const data = {
       slug: "cau-rong",
       category: "Địa điểm tham quan",
       image: "/images/caurong.jpg",
+      imageArr: [
+        "/images/caurong/1.jpg",
+        "/images/caurong/2.jpg",
+        "/images/caurong/3.jpg",
+        "/images/caurong/4.jpg",
+      ],
       imageCaption:
         "Cầu Rồng - Biểu tượng du lịch của thành phố Đà Nẵng (Ảnh: IG hahinmakeup86)",
       rating: 4.0,
@@ -51,6 +69,12 @@ const data = {
       slug: "nui-ngu-hanh-son",
       category: "Địa điểm tham quan",
       image: "/images/nuinguhanhson.jpg",
+      imageArr: [
+        "/images/nuinguhanhson/1.jpg",
+        "/images/nuinguhanhson/2.jpg",
+        "/images/nuinguhanhson/3.jpg",
+        "/images/nuinguhanhson/4.jpg",
+      ],
       imageCaption:
         "Ngắm nhìn vẻ đẹp toàn thành phố từ đỉnh núi Ngũ Hành Sơn (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -66,6 +90,12 @@ const data = {
       slug: "deo-hai-van",
       category: "Địa điểm tham quan",
       image: "/images/deohaivan.jpg",
+      imageArr: [
+        "/images/deohaivan/1.jpg",
+        "/images/deohaivan/2.jpg",
+        "/images/deohaivan/3.jpg",
+        "/images/deohaivan/4.jpg",
+      ],
       imageCaption:
         "Đèo Hải Vân - Cung đường đẹp bậc nhất với các tín đồ xê dịch (Ảnh: IG thuyxokum)",
       rating: 4.0,

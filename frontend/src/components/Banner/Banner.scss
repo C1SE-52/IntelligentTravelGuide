@@ -43,7 +43,7 @@
       text-shadow: 5px 5px $clr-gray-dark;
     }
     p {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 500;
       line-height: 1.5;
       max-width: 52rem;
@@ -51,6 +51,7 @@
       margin: 0 auto;
       text-shadow: 3px 3px $clr-gray-dark;
       background: rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.5px;
     }
   }
 }

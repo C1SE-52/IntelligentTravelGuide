@@ -1,0 +1,16 @@
+@use "../../scss/" as *;
+.profile {
+  min-height: calc(100vh - 10rem);
+  &__container {
+    background-color: $clr-secondary;
+    margin-top: 5rem;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    input {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+  }
+}

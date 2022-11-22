@@ -21,6 +21,7 @@ const Beach = () => {
   const [{ places }, dispatch] = useReducer(reducer, {
     places: [],
   });
+
   useEffect(() => {
     const fetchData = async () => {
       dispatch({ type: "FETCH_REQUEST" });
@@ -37,9 +38,9 @@ const Beach = () => {
     <div className="beach">
       <div>
         <Heading
-          head="Plan The"
+          head="Choose Your"
           title="Bãi Biển Đẹp"
-          desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the"
+          desc="Đà Nẵng là địa điểm du lịch không thể bỏ lỡ ở Việt Nam. Cùng xem ngay gợi ý top bãi biển Đà Nẵng đẹp say lòng người cho kỳ nghỉ hè tuyệt vời nhất nhé."
         />
         <Swiper
           slidesPerView={5}

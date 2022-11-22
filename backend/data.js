@@ -1,4 +1,19 @@
+import bcrypt from "bcryptjs";
 const data = {
+  users: [
+    {
+      name: "admin",
+      email: "admin@gmail.com",
+      password: bcrypt.hashSync("admin"),
+      isAdmin: true,
+    },
+    {
+      name: "test",
+      email: "test@gmail.com",
+      password: bcrypt.hashSync("test"),
+      isAdmin: false,
+    },
+  ],
   places: [
     {
       // _id: "1",
@@ -7,6 +22,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/baibui.jpg",
+      imageArr: [
+        "/images/baibut/1.jpg",
+        "/images/baibut/2.jpg",
+        "/images/baibut/3.jpg",
+        "/images/baibut/4.jpg",
+      ],
       imageCaption:
         "Bãi bụt sơ hữu cảnh đẹp hoang sơ, thu hút nhiều tín đồ xê dịch đến khám phá (Ảnh: Sưu tầm)",
       rating: 4.5,
@@ -24,6 +45,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/ghenhbang.jpg",
+      imageArr: [
+        "/images/ghenhbang/1.jpg",
+        "/images/ghenhbang/2.jpg",
+        "/images/ghenhbang/3.jpg",
+        "/images/ghenhbang/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Ghềnh Bàng với những mỏm đá nhiều hình thù độc đáo (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -41,6 +68,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/caurong.jpg",
+      imageArr: [
+        "/images/caurong/1.jpg",
+        "/images/caurong/2.jpg",
+        "/images/caurong/3.jpg",
+        "/images/caurong/4.jpg",
+      ],
       imageCaption:
         "Cầu Rồng - Biểu tượng du lịch của thành phố Đà Nẵng (Ảnh: IG hahinmakeup86)",
       rating: 4.0,
@@ -58,6 +91,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/nuinguhanhson.jpg",
+      imageArr: [
+        "/images/nuinguhanhson/1.jpg",
+        "/images/nuinguhanhson/2.jpg",
+        "/images/nuinguhanhson/3.jpg",
+        "/images/nuinguhanhson/4.jpg",
+      ],
       imageCaption:
         "Ngắm nhìn vẻ đẹp toàn thành phố từ đỉnh núi Ngũ Hành Sơn (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -74,6 +113,12 @@ const data = {
       slug: "deo-hai-van",
       category: "Địa điểm tham quan",
       image: "/images/deohaivan.jpg",
+      imageArr: [
+        "/images/deohaivan/1.jpg",
+        "/images/deohaivan/2.jpg",
+        "/images/deohaivan/3.jpg",
+        "/images/deohaivan/4.jpg",
+      ],
       quantity: 1,
       imageCaption:
         "Đèo Hải Vân - Cung đường đẹp bậc nhất với các tín đồ xê dịch (Ảnh: IG thuyxokum)",
@@ -93,6 +138,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/suoimo.jpg",
+      imageArr: [
+        "/images/suoimo/1.jpg",
+        "/images/suoimo/2.jpg",
+        "/images/suoimo/3.jpg",
+        "/images/suoimo/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Suối Mơ – địa điểm dã ngoại yêu thích của nhiều du khách (Ảnh: IG nguyenthanh.262)",
       rating: 4.0,
@@ -111,6 +162,12 @@ const data = {
       quantity: 1,
       category: "Địa điểm tham quan",
       image: "/images/thacbadophot.jpg",
+      imageArr: [
+        "/images/thacbadophot/1.jpg",
+        "/images/thacbadophot/2.jpg",
+        "/images/thacbadophot/3.jpg",
+        "/images/thacbadophot/4.jpg",
+      ],
       imageCaption: "Thác Ba Đờ Phọt hùng vĩ, tuyệt đẹp (Ảnh: Sưu tầm)",
       rating: 4.0,
       numReviews: 10,
@@ -128,6 +185,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/langnghenuocmamnamo.jpg",
+      imageArr: [
+        "/images/langnghenuocmamnamo/1.jpg",
+        "/images/langnghenuocmamnamo/2.jpg",
+        "/images/langnghenuocmamnamo/3.jpg",
+        "/images/langnghenuocmamnamo/4.jpg",
+      ],
       imageCaption:
         "Vẻ đẹp yên bình của địa điểm du lịch Đà Nẵng Làng nghề nước mắm Nam Ô (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -145,6 +208,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/langcophongnam.jpg",
+      imageArr: [
+        "/images/langcophongnam/1.jpg",
+        "/images/langcophongnam/2.jpg",
+        "/images/langcophongnam/3.jpg",
+        "/images/langcophongnam/4.jpg",
+      ],
       imageCaption:
         "Những bức tường rong rêu phủ kín tại làng cổ Phong Nam (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -162,6 +231,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/langbanhtrangtuylan.jpg",
+      imageArr: [
+        "/images/langbanhtrangtuylan/1.jpg",
+        "/images/langbanhtrangtuylan/2.jpg",
+        "/images/langbanhtrangtuylan/3.jpg",
+        "/images/langbanhtrangtuylan/4.jpg",
+      ],
       imageCaption:
         "Nhà thờ tộc lưu giữ nét kiến trúc cổ tại địa điểm du lịch Đà Nẵng Làng bánh tráng Túy Loan (Ảnh: Báo Lao Động)",
       rating: 4.0,
@@ -179,6 +254,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/giengtroi.jpg",
+      imageArr: [
+        "/images/giengtroi/1.jpg",
+        "/images/giengtroi/2.jpg",
+        "/images/giengtroi/3.jpg",
+        "/images/giengtroi/4.jpg",
+      ],
       imageCaption:
         "Giếng Trời - địa điểm vui chơi hòa cùng thiên nhiên tuyệt đẹp tại Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -196,6 +277,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/dinhbanco.jpg",
+      imageArr: [
+        "/images/dinhbanco/1.jpg",
+        "/images/dinhbanco/2.jpg",
+        "/images/dinhbanco/3.jpg",
+        "/images/dinhbanco/4.jpg",
+      ],
       imageCaption:
         "Đỉnh Bàn Cờ - địa điểm du lịch nổi tiếng tại Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -214,6 +301,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/haidangtiensa.jpg",
+      imageArr: [
+        "/images/haidangtiensa/1.jpg",
+        "/images/haidangtiensa/2.jpg",
+        "/images/haidangtiensa/3.jpg",
+        "/images/haidangtiensa/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Hải đăng Tiên Sa tạo lạc trên bán đảo Sơn Trà (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -231,6 +324,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/hodongxanhdongnghe.jpg",
+      imageArr: [
+        "/images/hodongxanhdongnghe/1.jpg",
+        "/images/hodongxanhdongnghe/2.jpg",
+        "/images/hodongxanhdongnghe/3.jpg",
+        "/images/hodongxanhdongnghe/4.jpg",
+      ],
       imageCaption:
         "Hòa mình cùng thiên nhiên xanh mát tại hồ Đồng Xanh - Đồng Nghệ (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -249,6 +348,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/rungduabaymau.jpg",
+      imageArr: [
+        "/images/rungduabaymau/1.jpg",
+        "/images/rungduabaymau/2.jpg",
+        "/images/rungduabaymau/3.jpg",
+        "/images/rungduabaymau/4.jpg",
+      ],
       imageCaption:
         "Rừng dừa Bảy Mẫu - địa điểm check-in cực hot gần Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -267,6 +372,12 @@ const data = {
       category: "Địa điểm tham quan",
       quantity: 1,
       image: "/images/thanhdiamyson.jpg",
+      imageArr: [
+        "/images/thanhdiamyson/1.jpg",
+        "/images/thanhdiamyson/2.jpg",
+        "/images/thanhdiamyson/3.jpg",
+        "/images/thanhdiamyson/4.jpg",
+      ],
       imageCaption:
         "Thánh địa Mỹ Sơn - điểm sống ảo cực chất gần Đà Nẵng (Ảnh: IG myng21)",
       rating: 4.0,
@@ -284,6 +395,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibienmykhe.jpg",
+      imageArr: [
+        "/images/baibienmykhe/1.jpg",
+        "/images/baibienmykhe/2.jpg",
+        "/images/baibienmykhe/3.jpg",
+        "/images/baibienmykhe/4.jpg",
+      ],
       imageCaption:
         "Biển Mỹ Khê là một trong những bãi biển đẹp nhất tại Đà Nẵng (Ảnh: IG hanggxuu)",
       rating: 4.0,
@@ -301,6 +418,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibienxuanthieu.jpg",
+      imageArr: [
+        "/images/baibienxuanthieu/1.jpg",
+        "/images/baibienxuanthieu/2.jpg",
+        "/images/baibienxuanthieu/3.jpg",
+        "/images/baibienxuanthieu/4.jpg",
+      ],
       imageCaption:
         "Bãi biển Xuân Thiều cũng là một trong những địa điểm du lịch biển lý tưởng tại Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -318,6 +441,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibiennonnuoc.jpg",
+      imageArr: [
+        "/images/baibiennonnuoc/1.jpg",
+        "/images/baibiennonnuoc/2.jpg",
+        "/images/baibiennonnuoc/3.jpg",
+        "/images/baibiennonnuoc/4.jpg",
+      ],
       imageCaption:
         "Bãi biển Non Nước có cảnh sắc hoang sơ thu hút khách du lịch (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -336,6 +465,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibiennamo.jpg",
+      imageArr: [
+        "/images/baibiennamo/1.jpg",
+        "/images/baibiennamo/2.jpg",
+        "/images/baibiennamo/3.jpg",
+        "/images/baibiennamo/4.jpg",
+      ],
       imageCaption:
         "Du khách chụp hình tại địa điểm du lịch Đà Nẵng Bãi rạn Nam Ô (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -353,6 +488,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibientiensa.jpg",
+      imageArr: [
+        "/images/baibientiensa/1.jpg",
+        "/images/baibientiensa/2.jpg",
+        "/images/baibientiensa/3.jpg",
+        "/images/baibientiensa/4.jpg",
+      ],
       imageCaption:
         "Biển Tiên Sa Đà Nẵng là một vùng biển yên bình, tuyệt đẹp (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -370,6 +511,12 @@ const data = {
       category: "Bãi biển đẹp",
       quantity: 1,
       image: "/images/baibienanbang.jpg",
+      imageArr: [
+        "/images/baibienanbang/1.jpg",
+        "/images/baibienanbang/2.jpg",
+        "/images/baibienanbang/3.jpg",
+        "/images/baibienanbang/4.jpg",
+      ],
       imageCaption:
         "Bãi biễn An Bàng mộc mạc, hoang sơ, du khách thỏa sức trải nghiệm du lịch biển (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -388,6 +535,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/chualinhung.jpg",
+      imageArr: [
+        "/images/chualinhung/1.jpg",
+        "/images/chualinhung/2.jpg",
+        "/images/chualinhung/3.jpg",
+        "/images/chualinhung/4.jpg",
+      ],
       imageCaption:
         "Du lịch tâm linh ở Đà Nẵng không thể bỏ qua chùa Linh Ứng (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -405,6 +558,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/nhathoconga.jpg",
+      imageArr: [
+        "/images/nhathoconga/1.jpg",
+        "/images/nhathoconga/2.jpg",
+        "/images/nhathoconga/3.jpg",
+        "/images/nhathoconga/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Nhà thờ Con Gà với kiến trúc nổi bật, thu hút (Ảnh: Sưu tầm)",
       rating: 4.0,
@@ -423,6 +582,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/chuaquanam.jpg",
+      imageArr: [
+        "/images/chuaquanam/1.jpg",
+        "/images/chuaquanam/2.jpg",
+        "/images/chuaquanam/3.jpg",
+        "/images/chuaquanam/4.jpg",
+      ],
       imageCaption:
         "Chùa Quan Âm có kiến trúc độc đáo, thu hút đông đảo khách du lịch hằng năm (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -440,6 +605,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/denlinhchualinhtu.jpg",
+      imageArr: [
+        "/images/denlinhchualinhtu/1.jpg",
+        "/images/denlinhchualinhtu/2.jpg",
+        "/images/denlinhchualinhtu/3.jpg",
+        "/images/denlinhchualinhtu/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng đền Lĩnh Chúa Linh Từ nằm giữa thiên nhiên nên thơ hùng vĩ (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -458,6 +629,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/nhathochinhtoa.jpg",
+      imageArr: [
+        "/images/nhathochinhtoa/1.jpg",
+        "/images/nhathochinhtoa/2.jpg",
+        "/images/nhathochinhtoa/3.jpg",
+        "/images/nhathochinhtoa/4.jpg",
+      ],
       imageCaption:
         "Nhà thờ Chính Tòa có màu hồng bắt mắt, trở thành điểm check-in thu hút tại Đà Nẵng (Ảnh: Sưu tầm) ",
       rating: 5.0,
@@ -475,6 +652,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/baotangdanang.jpg",
+      imageArr: [
+        "/images/baotangdanang/1.jpg",
+        "/images/baotangdanang/2.jpg",
+        "/images/baotangdanang/3.jpg",
+        "/images/baotangdanang/4.jpg",
+      ],
       imageCaption:
         "Thỏa sức check-in với nhiều bức tranh 3D độc đáo tại bảo tàng Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -492,6 +675,12 @@ const data = {
       category: "Văn hoá tín ngưỡng bản địa",
       quantity: 1,
       image: "/images/baotangdongdinh.jpg",
+      imageArr: [
+        "/images/baotangdongdinh/1.jpg",
+        "/images/baotangdongdinh/2.jpg",
+        "/images/baotangdongdinh/3.jpg",
+        "/images/baotangdongdinh/4.jpg",
+      ],
       imageCaption:
         "Bảo tàng Đồng Đình - nơi hòa mình trong những không gian xưa cũ (Ảnh: IG wygo.club)",
       rating: 5.0,
@@ -509,6 +698,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/chodemsontra.jpg",
+      imageArr: [
+        "/images/chodemsontra/1.jpg",
+        "/images/chodemsontra/2.jpg",
+        "/images/chodemsontra/3.jpg",
+        "/images/chodemsontra/4.jpg",
+      ],
       imageCaption:
         "Chợ đêm Sơn Trà là trung tâm mua sắm sầm uất bậc nhất tại Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -527,6 +722,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/baotang3d.jpg",
+      imageArr: [
+        "/images/baotang3d/1.jpg",
+        "/images/baotang3d/2.jpg",
+        "/images/baotang3d/3.jpg",
+        "/images/baotang3d/4.jpg",
+      ],
       imageCaption:
         "Nhiều góc chụp cực hot tại bảo tàng 3D Trick Eye (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -545,6 +746,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/ngoinhaupnguoc.jpg",
+      imageArr: [
+        "/images/ngoinhaupnguoc/1.jpg",
+        "/images/ngoinhaupnguoc/2.jpg",
+        "/images/ngoinhaupnguoc/3.jpg",
+        "/images/ngoinhaupnguoc/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Ngôi nhà úp ngược là địa điểm check in yêu thích của các bạn trẻ (Ảnh: VnExpress)",
       rating: 5.0,
@@ -563,6 +770,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/congvienbiendong.jpg",
+      imageArr: [
+        "/images/congvienbiendong/1.jpg",
+        "/images/congvienbiendong/2.jpg",
+        "/images/congvienbiendong/3.jpg",
+        "/images/congvienbiendong/4.jpg",
+      ],
       imageCaption:
         "Công viên Biển Đông - địa điểm vui chơi, check-in tại Đà Nẵng (Ảnh: IG haphuoong)",
       rating: 5.0,
@@ -581,6 +794,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/cungvanhoathieunhi.jpg",
+      imageArr: [
+        "/images/cungvanhoathieunhi/1.jpg",
+        "/images/cungvanhoathieunhi/2.jpg",
+        "/images/cungvanhoathieunhi/3.jpg",
+        "/images/cungvanhoathieunhi/4.jpg",
+      ],
       imageCaption:
         "Nhiều góc chụp nghệ thuật tại cung thiếu nhi Đà Nẵng (Ảnh: Sưu Tầm)",
       rating: 5.0,
@@ -599,6 +818,12 @@ const data = {
       category: "Địa điểm vui chơi hấp dẫn",
       quantity: 1,
       image: "/images/skybar36.jpg",
+      imageArr: [
+        "/images/skybar36/1.jpg",
+        "/images/skybar36/2.jpg",
+        "/images/skybar36/3.jpg",
+        "/images/skybar36/4.jpg",
+      ],
       imageCaption:
         "Sky bar 36 là điểm vui chơi quen thuộc với nhiều giới trẻ, khách du lịch khi đến Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -617,6 +842,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/langbichhoatamthanh.jpg",
+      imageArr: [
+        "/images/langbichhoatamthanh/1.jpg",
+        "/images/langbichhoatamthanh/2.jpg",
+        "/images/langbichhoatamthanh/3.jpg",
+        "/images/langbichhoatamthanh/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Làng Bích Họa Tam Thanh thu hút các bạn trẻ đến check in, chụp hình (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -635,6 +866,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/caukhoatinhyeu.jpg",
+      imageArr: [
+        "/images/caukhoatinhyeu/1.jpg",
+        "/images/caukhoatinhyeu/2.jpg",
+        "/images/caukhoatinhyeu/3.jpg",
+        "/images/caukhoatinhyeu/4.jpg",
+      ],
       imageCaption:
         "Cầu khóa tình yêu - địa điểm du lịch quen thuộc tại Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -652,6 +889,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/phimtruongthuanphuoc.jpg",
+      imageArr: [
+        "/images/phimtruongthuanphuoc/1.jpg",
+        "/images/phimtruongthuanphuoc/2.jpg",
+        "/images/phimtruongthuanphuoc/3.jpg",
+        "/images/phimtruongthuanphuoc/4.jpg",
+      ],
       imageCaption:
         "Không gian rộng lớn tại Phim trường Thuận Phước Field (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -669,6 +912,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/baicatvang.jpg",
+      imageArr: [
+        "/images/baicatvang/1.jpg",
+        "/images/baicatvang/2.jpg",
+        "/images/baicatvang/3.jpg",
+        "/images/baicatvang/4.jpg",
+      ],
       imageCaption:
         "Du lịch Đà Nẵng nên ghé qua bãi Cát Vàng với không gian xanh mát (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -687,6 +936,12 @@ const data = {
       quantity: 1,
       category: "Check-in Đà Nẵng",
       image: "/images/causonghan.jpg",
+      imageArr: [
+        "/images/causonghan/1.jpg",
+        "/images/causonghan/2.jpg",
+        "/images/causonghan/3.jpg",
+        "/images/causonghan/4.jpg",
+      ],
       imageCaption: "Vẻ đẹp lung linh của Cầu sông Hàn về đêm (Ảnh: Sưu tầm)",
       rating: 5.0,
       numReviews: 10,
@@ -703,6 +958,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/tuongcachephoarong.jpg",
+      imageArr: [
+        "/images/tuongcachephoarong/1.jpg",
+        "/images/tuongcachephoarong/2.jpg",
+        "/images/tuongcachephoarong/3.jpg",
+        "/images/tuongcachephoarong/4.jpg",
+      ],
       imageCaption:
         "Check-in tại tượng cá chép hóa rồng - biểu tượng của du lịch Đà Nẵng (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -720,6 +981,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/culaocham.jpg",
+      imageArr: [
+        "/images/culaocham/1.jpg",
+        "/images/culaocham/2.jpg",
+        "/images/culaocham/3.jpg",
+        "/images/culaocham/4.jpg",
+      ],
       imageCaption:
         "Khám phá du lịch gần Đà Nẵng ở điểm tham quan Cù Lao Chàm (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -738,6 +1005,12 @@ const data = {
       category: "Check-in Đà Nẵng",
       quantity: 1,
       image: "/images/baicochay.jpg",
+      imageArr: [
+        "/images/baicochay/1.jpg",
+        "/images/baicochay/2.jpg",
+        "/images/baicochay/3.jpg",
+        "/images/baicochay/4.jpg",
+      ],
       imageCaption:
         "Địa điểm du lịch Đà Nẵng Bãi Cỏ Cháy thu hút nhiều bạn trẻ đến chụp hình (Ảnh: Sưu tầm)",
       rating: 5.0,
@@ -756,6 +1029,12 @@ const data = {
       quantity: 1,
       category: "Check-in Đà Nẵng",
       image: "/images/rungthongbobo.jpg",
+      imageArr: [
+        "/images/rungthongbobo/1.jpg",
+        "/images/rungthongbobo/2.jpg",
+        "/images/rungthongbobo/3.jpg",
+        "/images/rungthongbobo/4.jpg",
+      ],
       imageCaption: "Rủ rê bạn bè dã ngoại tại rừng thông Bồ Bồ (Ảnh: Sưu tầm)",
       rating: 5.0,
       numReviews: 10,

@@ -18,7 +18,7 @@ const Advertise = () => {
             <div className="advertise__container">
               <img src={cusTomIcon1} alt="Icon" className="advertise__img" />
               <div className="advertise__content">
-                <h3>Restaurants</h3>
+                <h3>Sefie & Chụp ảnh</h3>
                 <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
               </div>
             </div>
@@ -27,7 +27,7 @@ const Advertise = () => {
             <div className="advertise__container">
               <img src={cusTomIcon2} alt="Icon" className="advertise__img" />
               <div className="advertise__content">
-                <h3>Sightseeing</h3>
+                <h3>Checkin & Tham quan</h3>
                 <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
               </div>
             </div>
@@ -36,7 +36,7 @@ const Advertise = () => {
             <div className="advertise__container">
               <img src={cusTomIcon3} alt="Icon" className="advertise__img" />
               <div className="advertise__content">
-                <h3>Shops & Boutiques</h3>
+                <h3>Thành phố phát triển</h3>
                 <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Advertise = () => {
             <div className="advertise__container">
               <img src={cusTomIcon4} alt="Icon" className="advertise__img" />
               <div className="advertise__content">
-                <h3>Where to Stay</h3>
+                <h3>Cùng khám phá</h3>
                 <p>Aenean commodo ligula eget dolor. Lorem ipsum</p>
               </div>
             </div>
